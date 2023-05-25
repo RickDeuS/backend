@@ -1,0 +1,59 @@
+{
+  "name": "fintech-core",
+  "version": "1.0.0",
+  "description": "fintech core backend",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js ",
+    "audit": "nodemon src/loaders/jobs/audit.js",
+    "apidoc": "apidoc -i src/ -o docs/"
+  },
+  "author": "axfernandoleon",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.1.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "form-data": "^4.0.0",
+    "helmet": "^4.4.0",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "mongoose": "^5.11.13",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "needle": "^2.6.0",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.6",
+    "nodemailer": "^6.6.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "package.json": "^2.0.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "request": "^2.88.2",
+    "rz-des": "^1.0.3",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "apidoc": {
+    "name": "Documentation Fintech",
+    "version": "1.0.0",
+    "description": "EndPoints",
+    "title": "Documentation Fintech",
+    "url": "",
+    "template": {
+      "forceLanguage": "es"
+    }
+  }
+}
